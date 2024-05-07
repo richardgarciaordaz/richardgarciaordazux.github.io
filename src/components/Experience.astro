@@ -1,0 +1,33 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCIE = [
+  {
+    date: "At the moment...",
+    title: "SEO Advisor & User Experience Designer",
+    company: "Remote",
+    description:
+      "Expert in optimizing the online presence of businesses through SEO strategies and effective UX design. I am passionate about helping companies achieve their business goals through a combination of data analysis, high-quality content creation, and designing intuitive and engaging interfaces..",
+    
+  },
+  {
+    date: "June 2022 - June 2023 ",
+    title: "User Experience Designer",
+    company: "Dey",
+    description:
+      "I optimize the user experience through research, iterative design and collaboration. I focus on understanding user needs, designing intuitive interfaces and conducting testing to ensure an effective final product.",
+      link: "https://www.dey.mx/"
+      ,
+      
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCIE.map((experiencie) => (
+      <li class="">
+        <ExperienceItem {...experiencie} />
+      </li>
+    ))
+  }
+</ol> 
